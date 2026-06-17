@@ -133,7 +133,7 @@ export function Home() {
               <Link to="/services" className="btn-primary">
                 View Services <ArrowRight size={20} />
               </Link>
-              <Link to="/contact" className="btn-outline">
+              <Link to="/gallery" className="btn-outline">
                 View Gallery <ArrowRight size={20} />
               </Link>
             </div>
