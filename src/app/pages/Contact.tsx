@@ -116,7 +116,16 @@ export function Contact() {
                   <div className="info-icon"><MapPin size={24} /></div>
                   <div className="info-content">
                     <h4>Our Office</h4>
-                    <p>Morbi, Gujarat, India</p>
+                    <p>
+                      <a
+                        href="https://maps.app.goo.gl/6k4sqnrYkMvmEPEC7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: 'var(--primary-teal)', textDecoration: 'none', cursor: 'pointer' }}
+                      >
+                        Morbi, Gujarat, India
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
