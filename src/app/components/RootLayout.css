@@ -242,7 +242,7 @@
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -276,7 +276,6 @@
   bottom: 1.5rem;
   right: 1.5rem;
   background-color: #25D366;
-  color: white;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 1rem;
@@ -290,6 +289,11 @@
 
 .whatsapp-float:hover {
   transform: scale(1.1) rotate(-5deg);
+}
+
+.whatsapp-float img {
+  background: transparent;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {

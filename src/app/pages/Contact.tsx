@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Phone, Mail, MapPin, Send, MessageSquare, CheckCircle, MailCheck } from "lucide-react";
+import { CheckCircle, Mail, MailCheck, MapPin, MessageSquare, Phone, Send } from "lucide-react";
 import { motion } from "motion/react";
+import { useEffect, useState } from "react";
 import "./Contact.css";
 
 export function Contact() {
@@ -94,15 +94,15 @@ export function Contact() {
                   <div className="info-icon"><Phone size={24} /></div>
                   <div className="info-content">
                     <h4>Call Us</h4>
-                    <p>+91 98257 35300</p>
-                    <p>+91 97122 35300</p>
+                    <p><a href="tel:+919825735300" style={{ color: 'var(--primary-teal)', textDecoration: 'none', cursor: 'pointer' }}>+91 98257 35300</a></p>
+                    <p><a href="tel:+919712235300" style={{ color: 'var(--primary-teal)', textDecoration: 'none', cursor: 'pointer' }}>+91 97122 35300</a></p>
                   </div>
                 </div>
                 <div className="info-item">
                   <div className="info-icon"><Mail size={24} /></div>
                   <div className="info-content">
                     <h4>Email Us</h4>
-                    <p style={{ wordBreak: 'break-all' }}>hemantbarasara@gmail.com</p>
+                    <p style={{ wordBreak: 'break-all' }}><a href="mailto:hemantbarasara@gmail.com" style={{ color: 'var(--primary-teal)', textDecoration: 'none', cursor: 'pointer' }}>hemantbarasara@gmail.com</a></p>
                   </div>
                 </div>
                 <div className="info-item">

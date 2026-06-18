@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { ChevronRight, Facebook, Instagram, Mail, MapPin, Menu, Phone, X, Youtube } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router";
-import { Menu, X, MessageCircle, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ChevronRight } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
 import "./RootLayout.css";
 
@@ -110,10 +110,11 @@ export function RootLayout() {
               <p style={{ color: '#9ca3af', lineHeight: 1.7, marginBottom: '2rem' }}>
                 Delivering high-quality earthmoving solutions and heavy equipment rentals across Gujarat since 1998. Your trusted partner in infrastructure development.
               </p>
+              <h4>Social Media</h4>
               <div className="social-links">
-                <a href="#" className="social-icon"><Facebook size={18} /></a>
-                <a href="#" className="social-icon"><Instagram size={18} /></a>
-                <a href="#" className="social-icon"><Linkedin size={18} /></a>
+                <a href="https://www.youtube.com/@hemantbarasara924" className="social-icon" title="YouTube" target="_blank" rel="noreferrer"><Youtube size={18} /></a>
+                <a href="https://www.instagram.com/patelengineeringandearthmovers?igsh=MWZ2MWg5bGJieTZvMw==" className="social-icon" title="Instagram" target="_blank" rel="noreferrer"><Instagram size={18} /></a>
+                <a href="https://www.facebook.com/people/Hemant-Barasara/pfbid02vhar5tPY9MPX73KtEFfHYaMWkWhn9qtF47kTsrsyoaNFPcsuntwn4gGrhQE9H5SNl/?mibextid=ZbWKwL" className="social-icon" title="Facebook" target="_blank" rel="noreferrer"><Facebook size={18} /></a>
               </div>
             </div>
 
@@ -134,11 +135,11 @@ export function RootLayout() {
             <div className="footer-col">
               <h4>Our Fleet</h4>
               <ul className="footer-links">
-                <li className="footer-link-item"><span className="footer-link"><ChevronRight size={14} /> Hanomag K7 Dozer</span></li>
-                <li className="footer-link-item"><span className="footer-link"><ChevronRight size={14} /> Heavy Excavators</span></li>
-                <li className="footer-link-item"><span className="footer-link"><ChevronRight size={14} /> Vibratory Rollers</span></li>
-                <li className="footer-link-item"><span className="footer-link"><ChevronRight size={14} /> Earthmovers</span></li>
-                <li className="footer-link-item"><span className="footer-link"><ChevronRight size={14} /> Site Preparation</span></li>
+                <li className="footer-link-item"><Link to="/services" className="footer-link"><ChevronRight size={14} /> Hanomag K7 Dozer</Link></li>
+                <li className="footer-link-item"><Link to="/services" className="footer-link"><ChevronRight size={14} /> Heavy Excavators</Link></li>
+                <li className="footer-link-item"><Link to="/services" className="footer-link"><ChevronRight size={14} /> Vibratory Rollers</Link></li>
+                <li className="footer-link-item"><Link to="/services" className="footer-link"><ChevronRight size={14} /> Earthmovers</Link></li>
+                <li className="footer-link-item"><Link to="/services" className="footer-link"><ChevronRight size={14} /> Site Preparation</Link></li>
               </ul>
             </div>
 
@@ -155,26 +156,21 @@ export function RootLayout() {
                 <Phone className="footer-contact-icon" size={20} />
                 <div className="footer-contact-text">
                   <strong>Phone Support</strong>
-                  +91 98257 35300<br/>
-                  +91 97122 35300
+                  <a href="tel:+919825735300" style={{ color: 'inherit', textDecoration: 'none', display: 'block' }}>+91 98257 35300</a>
+                  <a href="tel:+919712235300" style={{ color: 'inherit', textDecoration: 'none', display: 'block' }}>+91 97122 35300</a>
                 </div>
               </div>
               <div className="footer-contact-item">
                 <Mail className="footer-contact-icon" size={20} />
                 <div className="footer-contact-text">
                   <strong>Email Address</strong>
-                  hemantbarasara@gmail.com
+                  <a href="mailto:hemantbarasara@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>hemantbarasara@gmail.com</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <div className="footer-bottom-links">
-              <a href="#" className="footer-bottom-link">Privacy Policy</a>
-              <a href="#" className="footer-bottom-link">Terms & Conditions</a>
-              <a href="#" className="footer-bottom-link">Sitemap</a>
-            </div>
             <p className="footer-copy">
               &copy; {new Date().getFullYear()} Patel Engineering & Earthmovers. All rights reserved.
             </p>
@@ -184,13 +180,15 @@ export function RootLayout() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919825735300"
+        href="https://wa.me/919825735300?text=Hello%20Patel%20Engineering%20%26%20Earthmovers%2C%20I%20would%20like%20to%20inquire%20about%20your%20equipment%20rental%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle size={28} />
+        <img src={getCloudinaryUrl("whatsapp_icon_snndwi_.png", "w_40,f_auto,q_auto")}
+             alt="WhatsApp"
+             style={{ width: '28px', height: '28px' }} />
       </a>
     </div>
   );
