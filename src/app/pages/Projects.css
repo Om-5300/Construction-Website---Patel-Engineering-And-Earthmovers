@@ -34,6 +34,8 @@
   font-weight: 950;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  word-break: break-word;
+
 }
 
 .projects-hero h1 span {

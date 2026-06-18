@@ -34,6 +34,8 @@
   font-weight: 950;
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  word-break: break-word;
+
 }
 
 .about-hero h1 span {
@@ -199,8 +201,8 @@
 }
 
 .owner-image-box {
-  width: 19rem;
-  height: 19rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
