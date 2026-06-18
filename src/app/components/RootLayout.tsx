@@ -149,7 +149,7 @@ export function RootLayout() {
                 <MapPin className="footer-contact-icon" size={20} />
                 <div className="footer-contact-text">
                   <strong>Our Office</strong>
-                  Morbi, Gujarat, India.
+                  <a href="https://maps.app.goo.gl/6k4sqnrYkMvmEPEC7" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}>Morbi, Gujarat, India.</a>
                 </div>
               </div>
               <div className="footer-contact-item">
