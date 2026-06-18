@@ -594,3 +594,10 @@
 
   .cta-home h2 { font-size: 3rem; }
 }
+
+@media (max-width: 350px) {
+  .experience-badge
+  {
+    padding: 1rem;
+  }
+}
