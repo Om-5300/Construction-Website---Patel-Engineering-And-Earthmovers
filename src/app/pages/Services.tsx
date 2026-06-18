@@ -11,7 +11,7 @@ const services = [
     id: "dozer",
     name: "Hanomag K7 Dozer",
     image: getCloudinaryUrl("Dozer_service_ee0zqk", "w_1200,h_900,c_fill,g_auto,q_auto:best"),
-    specs: ["Engine: 100 HP", "Blade Size: 10 Feet", "Weight: 7 Tons"],
+    specs: ["Engine: 110 HP", "Blade Size: 10 Feet", "Weight: 8.5 Tons"],
     useCases: ["Land Clearing", "Bulk Grading", "Site Preparation", "Road Construction"],
     description: "Our Hanomag K7 dozers are the workhorses of our fleet. Known for their reliability and power, they are perfect for large-scale earthmoving tasks in Gujarat's diverse terrain."
   },
