@@ -25,19 +25,19 @@ const testimonials = [
   },
   {
     name: "Vijay Gadhvi",
-    company: "Reliance Industries",
+    company: "URC Construction",
     quote: "Their service support is outstanding. Any minor issues with the machinery were addressed immediately, ensuring zero downtime at our site.",
     rating: 4,
   },
   {
     name: "Deepak Sharma",
-    company: "Adani Ports",
+    company: "Afcon Infrastructure",
     quote: "Excellent fleet of excavators. We used them for the Mundra port expansion and the performance was consistently high.",
     rating: 5,
   },
   {
     name: "Kunal Jha",
-    company: "NHAI Contractor",
+    company: "Ranjit Buildcon Ltd.",
     quote: "Fair pricing and well-maintained machines. One of the best earthmoving rental services in Gujarat.",
     rating: 5,
   },
