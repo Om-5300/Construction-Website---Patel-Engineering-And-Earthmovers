@@ -18,15 +18,15 @@ const galleryImages = [
 ];
 
 const galleryVideos = [
-  { id: 1, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("dozer_site_operations_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video1_riokb4.mp4", "q_auto:best"), duration: "0:45" },
-  { id: 2, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("excavator_precision_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video2_ozmiqt.mp4", "q_auto:best"), duration: "1:20" },
-  { id: 3, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video3_rj1rzm.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 4, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video4_gpuyz2.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 5, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video5_da8dtg.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 6, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video6_ydisyo.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 7, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video7_et7a7k.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 8, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video8_kcdrkh.mp4", "q_auto:best"), duration: "2:15" },
-  { id: 9, title: "Dozer Site Operations", thumbnail: getCloudinaryUrl("highway_compaction_thumb.jpg", "w_800,h_600,c_fill,q_auto:best"), url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video9_wgrlxg.mp4", "q_auto:best"), duration: "2:15" }
+  { id: 1, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video1_riokb4.mp4", "q_auto:best"), duration: "0:45" },
+  { id: 2, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video2_ozmiqt.mp4", "q_auto:best"), duration: "1:20" },
+  { id: 3, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video3_rj1rzm.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 4, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video4_gpuyz2.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 5, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video5_da8dtg.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 6, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video6_ydisyo.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 7, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video7_et7a7k.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 8, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video8_kcdrkh.mp4", "q_auto:best"), duration: "2:15" },
+  { id: 9, title: "Dozer Site Operations", url: getCloudinaryVideoUrl("Hanomag_K7_Dozer_Video9_wgrlxg.mp4", "q_auto:best"), duration: "2:15" }
 ];
 
 export function Gallery() {
@@ -184,7 +184,6 @@ export function Gallery() {
                       <video
                         className="video-element"
                         src={video.url}
-                        poster={video.thumbnail}
                         playsInline
                         autoPlay
                         muted
