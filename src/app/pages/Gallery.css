@@ -63,6 +63,7 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .gallery-tab {
