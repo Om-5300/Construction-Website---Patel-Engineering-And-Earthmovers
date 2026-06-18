@@ -15,8 +15,7 @@ export function Contact() {
     message: ""
   });
 
-  // PASTE YOUR GOOGLE SCRIPT URL HERE
-  const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwsPQ9uiiyGMPrGUapchNujU8gD4zQYrM4u_npRPKv8P--CS55eJA-V9In4ykOCiTtf/exec";
+  const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbyaQY9jrO2mTTvuGrNQLdKt-b2jSRt1QXJIpywELFrGkbb0Abe1Aels-e3FTYLFkeVD/exec";
 
   useEffect(() => {
     updateSEO({
@@ -40,11 +39,11 @@ export function Contact() {
 
     try {
       // 1. Send data to Google Sheets
-      if (GOOGLE_SHEET_URL !== "YOUR_GOOGLE_SCRIPT_URL") {
+      if (GOOGLE_SHEET_URL.includes("script.google.com")) {
         await fetch(GOOGLE_SHEET_URL, {
           method: "POST",
           mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "text/plain" },
           body: JSON.stringify(formData)
         });
       } else {
