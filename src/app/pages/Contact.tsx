@@ -16,7 +16,7 @@ export function Contact() {
   });
 
   // PASTE YOUR GOOGLE SCRIPT URL HERE
-  const GOOGLE_SHEET_URL = "YOUR_GOOGLE_SCRIPT_URL";
+  const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwsPQ9uiiyGMPrGUapchNujU8gD4zQYrM4u_npRPKv8P--CS55eJA-V9In4ykOCiTtf/exec";
 
   useEffect(() => {
     updateSEO({

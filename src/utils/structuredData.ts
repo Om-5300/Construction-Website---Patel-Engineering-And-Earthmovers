@@ -1,9 +1,23 @@
+export function addStructuredData(id: string, data: Record<string, any>) {
+  // Remove existing script with this ID if it exists
+  const existingScript = document.getElementById(id);
+  if (existingScript) {
+    existingScript.remove();
+  }
+
+  const script = document.createElement('script');
+  script.id = id;
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(data);
+  document.head.appendChild(script);
+}
+
 export function addOrganizationSchema() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Patel Engineering & Earthmovers",
-    "image": "https://res.cloudinary.com/YOUR_CLOUDINARY_ID/image/upload/w_900,f_auto,q_auto/patel_engineering__earthmovers_logo.png",
+    "image": "https://res.cloudinary.com/dl976v88p/image/upload/w_900,f_auto,q_auto/patel_engineering__earthmovers_logo.png",
     "description": "Professional earthmoving equipment rental and heavy machinery services in Morbi, Gujarat. Offering Hanomag dozers, excavators, vibratory rollers and other heavy equipment for rent since 1998.",
     "url": "https://patelengineeringandearthmovers.in",
     "telephone": "+91-98257-35300",
@@ -37,8 +51,8 @@ export function addOrganizationSchema() {
     ],
     "priceRange": "₹",
     "sameAs": [
-      "https://www.facebook.com/people/Hemant-Barasara/",
-      "https://www.instagram.com/patelengineeringandearthmovers/",
+      "https://www.facebook.com/people/Hemant-Barasara/pfbid02vhar5tPY9MPX73KtEFfHYaMWkWhn9qtF47kTsrsyoaNFPcsuntwn4gGrhQE9H5SNl/?mibextid=ZbWKwL",
+      "https://www.instagram.com/patelengineeringandearthmovers?igsh=MWZ2MWg5bGJieTZvMw==",
       "https://www.youtube.com/@hemantbarasara924"
     ],
     "openingHoursSpecification": {
@@ -49,10 +63,7 @@ export function addOrganizationSchema() {
     }
   };
 
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify(organizationSchema);
-  document.head.appendChild(script);
+  addStructuredData('org-schema', organizationSchema);
 }
 
 export function addBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
@@ -67,10 +78,7 @@ export function addBreadcrumbSchema(items: Array<{ name: string; url: string }>)
     }))
   };
 
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify(breadcrumbSchema);
-  document.head.appendChild(script);
+  addStructuredData('breadcrumb-schema', breadcrumbSchema);
 }
 
 export function addServiceSchema() {
@@ -102,8 +110,5 @@ export function addServiceSchema() {
     ]
   };
 
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify(serviceSchema);
-  document.head.appendChild(script);
+  addStructuredData('service-schema', serviceSchema);
 }

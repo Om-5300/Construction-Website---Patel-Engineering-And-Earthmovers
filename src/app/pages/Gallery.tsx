@@ -95,10 +95,6 @@ export function Gallery() {
     setActiveVideo(null);
   };
 
-  useEffect(() => {
-    document.title = "Gallery | Patel Engineering & Earth Movers";
-  }, []);
-
   return (
     <div className="gallery-page">
       {/* High-Impact Header */}

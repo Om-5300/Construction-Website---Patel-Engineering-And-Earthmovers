@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
-import { addOrganizationSchema, addServiceSchema } from "../../utils/structuredData";
+import { addBreadcrumbSchema, addOrganizationSchema, addServiceSchema } from "../../utils/structuredData";
 import "./RootLayout.css";
 
 export function RootLayout() {
@@ -15,6 +15,25 @@ export function RootLayout() {
     addOrganizationSchema();
     addServiceSchema();
   }, []);
+
+  useEffect(() => {
+    // Dynamically generate breadcrumbs based on path
+    const pathParts = location.pathname.split('/').filter(p => p);
+    const breadcrumbs = [
+      { name: "Home", url: "https://patelengineeringandearthmovers.in/" }
+    ];
+
+    let currentPath = "";
+    pathParts.forEach(part => {
+      currentPath += `/${part}`;
+      breadcrumbs.push({
+        name: part.charAt(0).toUpperCase() + part.slice(1),
+        url: `https://patelengineeringandearthmovers.in${currentPath}`
+      });
+    });
+
+    addBreadcrumbSchema(breadcrumbs);
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
