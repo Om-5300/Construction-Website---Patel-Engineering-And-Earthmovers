@@ -1,12 +1,20 @@
-import { useEffect } from "react";
-import { Landmark, Construction, ShieldCheck, CheckCircle2, Award, Briefcase } from "lucide-react";
+import { Award, CheckCircle2, Construction, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./Clients.css";
 
 export function Clients() {
   useEffect(() => {
-    document.title = "Our Clients | Trusted Partners | Patel Engineering";
+    updateSEO({
+      title: "Our Clients | Trusted Partners | Patel Engineering & Earthmovers",
+      description: "Discover the leading companies and organizations that trust Patel Engineering & Earthmovers for their heavy equipment rental needs in Gujarat.",
+      keywords: "client companies, partners, construction companies, industrial clients, equipment rental clients, project partners",
+      ogTitle: "Our Clients - Patel Engineering & Earthmovers",
+      ogDescription: "Companies and organizations that trust us",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/clients"
+    });
   }, []);
 
   // Private Infrastructure Clients (Synced with Home Page)

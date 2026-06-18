@@ -1,6 +1,7 @@
 import { CheckCircle, Mail, MailCheck, MapPin, MessageSquare, Phone, Send } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { updateSEO } from "../../utils/seo";
 import "./Contact.css";
 
 export function Contact() {
@@ -18,7 +19,14 @@ export function Contact() {
   const GOOGLE_SHEET_URL = "YOUR_GOOGLE_SCRIPT_URL";
 
   useEffect(() => {
-    document.title = "Contact Us | Get a Quote | Patel Engineering";
+    updateSEO({
+      title: "Contact Us - Get a Quote | Patel Engineering & Earthmovers",
+      description: "Get in touch with Patel Engineering & Earthmovers for equipment rental quotes in Morbi, Gujarat. Call +91 98257 35300 or email for immediate assistance.",
+      keywords: "contact equipment rental, machinery quote, earthmoving services contact, Patel Engineering Morbi, heavy equipment rental inquiry",
+      ogTitle: "Get a Quote - Patel Engineering & Earthmovers",
+      ogDescription: "Contact us for equipment rental quotes and immediate support",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/contact"
+    });
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

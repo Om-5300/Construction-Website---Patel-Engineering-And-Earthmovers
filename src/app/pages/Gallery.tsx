@@ -2,6 +2,7 @@ import { Camera, Maximize2, Video } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { getCloudinaryUrl, getCloudinaryVideoUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./Gallery.css";
 
 const galleryImages = [
@@ -31,6 +32,17 @@ const galleryVideos = [
 export function Gallery() {
   const [activeTab, setActiveTab] = useState<"photos" | "videos">("photos");
   const [videoDurations, setVideoDurations] = useState<Record<number, string>>({});
+
+  useEffect(() => {
+    updateSEO({
+      title: "Gallery | Equipment & Projects | Patel Engineering & Earthmovers",
+      description: "Browse our gallery featuring heavy equipment, machinery fleet, and completed construction projects. See the quality of Patel Engineering's services.",
+      keywords: "equipment gallery, machinery photos, project gallery, earthmoving equipment images, heavy equipment photos, construction gallery",
+      ogTitle: "Gallery - Patel Engineering & Earthmovers",
+      ogDescription: "View our equipment and completed projects",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/gallery"
+    });
+  }, []);
 
   const formatTime = (seconds: number) => {
     if (!isFinite(seconds) || seconds <= 0) return "0:00";

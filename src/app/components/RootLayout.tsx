@@ -3,12 +3,18 @@ import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { addOrganizationSchema, addServiceSchema } from "../../utils/structuredData";
 import "./RootLayout.css";
 
 export function RootLayout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    addOrganizationSchema();
+    addServiceSchema();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {

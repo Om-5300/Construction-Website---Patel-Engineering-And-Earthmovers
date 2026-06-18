@@ -1,7 +1,8 @@
+import { Award, MapPin } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { MapPin, User, Truck, LayoutList, Award } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./Projects.css";
 
 const projects = [
@@ -96,7 +97,14 @@ export function Projects() {
   const categories = ["All", "Expressway", "Airport", "Metro", "Port", "Commercial"];
 
   useEffect(() => {
-    document.title = "Our Projects | Infrastructure Portfolio | Patel Engineering";
+    updateSEO({
+      title: "Featured Projects | Infrastructure Portfolio | Patel Engineering",
+      description: "Explore our portfolio of successful construction projects completed with professional earthmoving equipment and services across Gujarat.",
+      keywords: "construction projects, project portfolio, infrastructure projects, earthmoving projects, Patel Engineering projects, Gujarat construction",
+      ogTitle: "Featured Projects - Patel Engineering",
+      ogDescription: "Successful construction projects completed with professional equipment",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/projects"
+    });
   }, []);
 
   const filteredProjects = filter === "All"

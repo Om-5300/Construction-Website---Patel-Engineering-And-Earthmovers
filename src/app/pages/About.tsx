@@ -1,12 +1,20 @@
-import { useEffect } from "react";
+import { Award, Clock, Leaf, TrendingUp, Users } from "lucide-react";
 import { motion } from "motion/react";
-import { Award, Leaf, Clock, Users, TrendingUp, ShieldCheck } from "lucide-react";
+import { useEffect } from "react";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./About.css";
 
 export function About() {
   useEffect(() => {
-    document.title = "About Us | Patel Engineering & Earth Movers";
+    updateSEO({
+      title: "About Us | Patel Engineering & Earthmovers - 25+ Years Experience",
+      description: "Learn about Patel Engineering & Earthmovers, Gujarat's trusted earthmoving equipment provider since 1998. Over 25 years of excellence in heavy machinery rental.",
+      keywords: "about Patel Engineering, earthmoving company, heavy equipment provider, Morbi machinery rental, construction equipment history, Gujarat earthmovers",
+      ogTitle: "About Patel Engineering & Earthmovers",
+      ogDescription: "25+ years of trusted earthmoving equipment services in Gujarat",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/about"
+    });
   }, []);
 
   const whyChooseUs = [

@@ -1,6 +1,7 @@
-import { useEffect } from "react";
-import { Star, Quote, Award, MessageSquareQuote } from "lucide-react";
+import { MessageSquareQuote, Quote, Star } from "lucide-react";
 import { motion } from "motion/react";
+import { useEffect } from "react";
+import { updateSEO } from "../../utils/seo";
 import "./Testimonials.css";
 
 const testimonials = [
@@ -44,7 +45,14 @@ const testimonials = [
 
 export function Testimonials() {
   useEffect(() => {
-    document.title = "Client Reviews | Patel Engineering & Earth Movers";
+    updateSEO({
+      title: "Client Testimonials & Reviews | Patel Engineering & Earthmovers",
+      description: "Read testimonials and reviews from satisfied clients who have used Patel Engineering & Earthmovers' equipment rental services in Gujarat.",
+      keywords: "client testimonials, customer reviews, equipment rental reviews, Patel Engineering testimonials, satisfied clients",
+      ogTitle: "Client Testimonials - Patel Engineering",
+      ogDescription: "See what our satisfied clients say about our services",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/testimonials"
+    });
   }, []);
 
   return (

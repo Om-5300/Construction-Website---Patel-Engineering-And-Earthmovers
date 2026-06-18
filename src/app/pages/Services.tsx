@@ -1,8 +1,9 @@
-import { useEffect } from "react";
-import { CheckCircle2, ChevronRight, Award, PenTool } from "lucide-react";
-import { Link } from "react-router";
+import { CheckCircle2, ChevronRight, PenTool } from "lucide-react";
 import { motion } from "motion/react";
+import { useEffect } from "react";
+import { Link } from "react-router";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./Services.css";
 
 const services = [
@@ -34,7 +35,14 @@ const services = [
 
 export function Services() {
   useEffect(() => {
-    document.title = "Our Services | Heavy Equipment Fleet | Patel Engineering";
+    updateSEO({
+      title: "Heavy Equipment & Machinery Rental | Services | Patel Engineering",
+      description: "Professional earthmoving equipment rental services in Morbi, Gujarat. Hanomag dozers, excavators, vibratory rollers, and specialized machinery for construction projects.",
+      keywords: "heavy equipment rental, dozer rental, excavator rental, vibratory roller, equipment services, earthmoving machinery, construction equipment Morbi",
+      ogTitle: "Heavy Equipment & Machinery Rental Services",
+      ogDescription: "Professional earthmoving equipment rental services including dozers, excavators, and rollers",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/services"
+    });
   }, []);
 
   return (

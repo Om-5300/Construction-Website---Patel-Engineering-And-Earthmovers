@@ -1,20 +1,27 @@
-import { useEffect } from "react";
-import { motion } from "motion/react";
 import {
   ArrowRight,
+  Building2,
   CheckCircle2,
   Trophy,
-  Building2,
   Truck,
 } from "lucide-react";
+import { motion } from "motion/react";
+import { useEffect } from "react";
 import { Link } from "react-router";
 import { getCloudinaryUrl } from "../../utils/cloudinary";
+import { updateSEO } from "../../utils/seo";
 import "./Home.css";
 
 export function Home() {
   useEffect(() => {
-    document.title =
-      "Patel Engineering & Earth Movers | Heavy Equipment Rental Gujarat";
+    updateSEO({
+      title: "Patel Engineering & Earthmovers | Heavy Equipment Rental Gujarat",
+      description: "Professional earthmoving equipment rental in Morbi, Gujarat. High-quality Hanomag dozers, excavators, and heavy machinery since 1998. Get competitive quotes today!",
+      keywords: "earthmoving equipment, heavy machinery rental, dozer rental, excavator rental, equipment rental Morbi, construction equipment, equipment hire Gujarat",
+      ogTitle: "Patel Engineering & Earthmovers - Heavy Equipment Rental",
+      ogDescription: "Professional earthmoving equipment rental and heavy machinery services in Morbi, Gujarat",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/"
+    });
   }, []);
 
   const stats = [
