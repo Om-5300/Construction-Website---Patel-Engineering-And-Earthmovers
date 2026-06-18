@@ -7,7 +7,7 @@ import "./Projects.css";
 const projects = [
   {
     name: "Diamond Bourse",
-    client: "SDB Committee",
+    client: "PSP Projects Ltd.",
     location: "Surat, Gujarat",
     category: "Commercial",
     image: getCloudinaryUrl("Diamond_Bourse_hd3haq.jpg", "w_1200,h_900,c_fill,q_auto:best")
@@ -58,7 +58,7 @@ const projects = [
     name: "Sabarmati Riverfront",
     client: "SRFDCL",
     location: "Ahmedabad, Gujarat",
-    category: "Commercial",
+    category: "Infrastructure",
     image: getCloudinaryUrl("Sabarmati_Riverfront_Project_thicbg.png", "w_1200,h_900,c_fill,q_auto:best")
   },
 {
@@ -149,10 +149,10 @@ export function Projects() {
                   <h3>{project.name}</h3>
 
                   <div className="project-details">
-                    <div className="detail-item">
+                    {/* <div className="detail-item">
                       <User size={18} />
                       <span><span className="detail-label">Client:</span> {project.client}</span>
-                    </div>
+                    </div> */}
                     <div className="detail-item">
                       <MapPin size={18} />
                       <span><span className="detail-label">Location:</span> {project.location}</span>
@@ -164,11 +164,6 @@ export function Projects() {
           </AnimatePresence>
         </motion.div>
 
-        {filteredProjects.length === 0 && (
-          <div className="no-results">
-            <p>No projects found in this category.</p>
-          </div>
-        )}
       </div>
     </div>
   );
