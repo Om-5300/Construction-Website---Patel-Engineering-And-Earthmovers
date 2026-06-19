@@ -75,7 +75,7 @@ export function About() {
           </div>
           <div className="story-image-box">
             <img
-              src={getCloudinaryUrl("about_us_story_image_gkrtmm.png", "w_800,f_auto,q_auto")}
+              src={getCloudinaryUrl("about_us_story_image_gkrtmm.png", "w_2000,f_auto,q_auto")}
               alt="About Us Story Image"
               className="story-image"
             />

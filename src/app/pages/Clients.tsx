@@ -21,52 +21,52 @@ export function Clients() {
   const privateClients = [
     {
       name: "L&T CONSTRUCTION",
-      id: "lt_logo_.png",
+      id: "lt_logo__.webp",
       description: "Partnering on major highway and bridge projects with heavy-duty excavation support."
     },
     {
       name: "PSP PROJECTS LTD",
-      id: "psp_logo_.png",
+      id: "psp_logo__.webp",
       description: "Providing precision grading and site preparation for high-rise commercial developments."
     },
     {
       name: "SHAPOORJI PALLONJI",
-      id: "sp_logo.png",
+      id: "sp_logo.webp",
       description: "Reliable equipment rental for landmark residential and institutional infrastructure."
     },
     {
       name: "AFCON INFRASTRUCTURE",
-      id: "afcon_logo.png",
+      id: "afcon_logo_.webp",
       description: "Supporting marine and port infrastructure with specialized earthmoving solutions."
     },
     {
       name: "M.S. KHURANA ENG. LTD",
-      id: "msk_logo_.jpg",
+      id: "msk_logo__.webp",
       description: "Long-term partnership for state-wide road construction and irrigation projects."
     },
     {
       name: "URC CONSTRUCTION",
-      id: "URC_logo_tj7lhc.svg",
+      id: "URC_logo_tj7lhc.webp",
       description: "Executing large-scale industrial earthworks and foundation digging."
     },
     {
       name: "DILIP BUILDCON LTD",
-      id: "Dilip_Buildcon_Logo_mepbsb.png",
+      id: "Dilip_Buildcon_Logo_mepbsb.webp",
       description: "Critical equipment deployment for some of India's longest expressway stretches."
     },
     {
       name: "RANJIT BUILDCON LTD",
-      id: "ranjeet_buildcon_logo.png",
+      id: "ranjeet_buildcon_logo_.webp",
       description: "Expert earthmoving services for metro rail and urban transport infrastructure."
     },
     {
       name: "BACKBONE ENTRERPRISE LTD",
-      id: "backbone_logo_.png",
+      id: "backbone_logo_.webp",
       description: "Infrastructure support for regional canal systems and water management."
     },
     {
       name: "NCC LIMITED",
-      id: "ncc_logo_.png",
+      id: "ncc_logo_.webp",
       description: "Providing heavy machinery for integrated township and mining site preparation."
     }
   ];

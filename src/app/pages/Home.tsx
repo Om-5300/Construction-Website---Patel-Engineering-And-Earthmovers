@@ -86,16 +86,16 @@ export function Home() {
   ];
 
   const logos = [
-    { name: "L&T CONSTRUCTION", id: "lt_logo_.png" },
-    { name: "PSP PROJECTS LTD", id: "psp_logo_.png" },
-    { name: "SHAPOORJI PALLONJI", id: "sp_logo.png" },
-    { name: "AFCON INFRASTRUCTURE", id: "afcon_logo.png" },
-    { name: "M.S. KHURANA ENG. LTD", id: "msk_logo_.jpg" },
-    { name: "URC CONSTRUCTION", id: "URC_logo_tj7lhc.svg" },
-    { name: "DILIP BUILDCON LTD", id: "Dilip_Buildcon_Logo_mepbsb.png" },
-    { name: "RANJIT BUILDCON LTD", id: "ranjeet_buildcon_logo.png" },
-    { name: "BACKBONE ENTRERPRISE LTD", id: "backbone_logo_.png" },
-    { name: "NCC LIMITED", id: "ncc_logo_.png" },
+    { name: "L&T CONSTRUCTION", id: "lt_logo__.webp" },
+    { name: "PSP PROJECTS LTD", id: "psp_logo_.webp" },
+    { name: "SHAPOORJI PALLONJI", id: "sp_logo.webp" },
+    { name: "AFCON INFRASTRUCTURE", id: "afcon_logo_.webp" },
+    { name: "M.S. KHURANA ENG. LTD", id: "msk_logo_.webp" },
+    { name: "URC CONSTRUCTION", id: "URC_logo_tj7lhc.webp" },
+    { name: "DILIP BUILDCON LTD", id: "Dilip_Buildcon_Logo_mepbsb.webp" },
+    { name: "RANJIT BUILDCON LTD", id: "ranjeet_buildcon_logo.webp" },
+    { name: "BACKBONE ENTRERPRISE LTD", id: "backbone_logo_.webp" },
+    { name: "NCC LIMITED", id: "ncc_logo_.webp" },
   ];
 
   return (
