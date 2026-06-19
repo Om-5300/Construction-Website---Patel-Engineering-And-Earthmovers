@@ -211,7 +211,7 @@ export function RootLayout() {
         className="whatsapp-float"
         aria-label="Chat on WhatsApp"
       >
-        <img src={getCloudinaryUrl("whatsapp_icon_snndwi_.png", "w_40,f_auto,q_auto")}
+        <img src={getCloudinaryUrl("whatsapp_icon_snndwi_.png", "w_400,f_auto,q_auto")}
              alt="WhatsApp"
              style={{ width: '28px', height: '28px' }} />
       </a>
