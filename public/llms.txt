@@ -1,0 +1,42 @@
+# Patel Engineering & Earthmovers
+
+A modern, high-performance multi-page website for a heavy equipment rental and earthmoving service provider based in Morbi, Gujarat.
+
+## Project Overview
+This project is a professional portfolio and inquiry platform for Patel Engineering & Earthmovers, a company with over 25 years of experience in the construction industry. It showcases their fleet, past projects, and major clients.
+
+## Tech Stack
+- **Frontend Framework:** React 18 with Vite
+- **Routing:** React Router v7
+- **Styling:** Tailwind CSS v4, custom CSS modules
+- **Animations:** Motion (Framer Motion)
+- **Icons:** Lucide React
+- **UI Components:** Radix UI, Material UI (MUI)
+- **Image Management:** Cloudinary (custom utility for optimized delivery)
+- **Deployment:** Vercel (SPA rewrite configured in `vercel.json`)
+
+## Key Features
+- **Dynamic SEO:** Custom utility to update meta tags, Open Graph data, and canonical URLs per page.
+- **Structured Data:** Automated JSON-LD injection for LocalBusiness, Service, and Breadcrumb schemas to enhance search visibility.
+- **Inquiry System:** Contact form integrated with Google Apps Script for automated lead tracking in Google Sheets and instant email notifications.
+- **Optimized Media:** Automatic generation of optimized image and video URLs using Cloudinary.
+- **Responsive Design:** Mobile-first architecture with dedicated navigation and UI patterns.
+- **Interactive Gallery:** Support for both photo and video action shots of machinery.
+
+## Project Structure
+- `/src/app/pages`: Individual page components (Home, About, Services, Projects, Clients, Gallery, Testimonials, Contact).
+- `/src/app/components`: Layout components like `RootLayout` (Header, Footer, Nav).
+- `/src/utils`: Core utilities for SEO, Cloudinary, and Structured Data.
+- `/src/styles`: Global variables and base typography.
+
+## Core Services
+- Hanomag K7 Dozer Rental
+- Heavy Excavator Services
+- Vibratory Roller Rental
+- Site Preparation and Grading
+
+## Contact Info
+- **Location:** Morbi, Gujarat, India
+- **Primary Email:** hemantbarasara@gmail.com
+- **WhatsApp:** +91 98257 35300
+- **Website:** https://patelengineeringandearthmovers.in
