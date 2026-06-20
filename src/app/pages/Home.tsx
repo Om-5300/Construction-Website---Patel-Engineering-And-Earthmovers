@@ -16,11 +16,14 @@ export function Home() {
   useEffect(() => {
     updateSEO({
       title: "Patel Engineering & Earthmovers | Heavy Equipment Rental Gujarat",
-      description: "Professional earthmoving equipment rental in Morbi, Gujarat. High-quality Hanomag dozers, excavators, and heavy machinery since 1998. Get competitive quotes today!",
-      keywords: "earthmoving equipment, heavy machinery rental, dozer rental, excavator rental, equipment rental Morbi, construction equipment, equipment hire Gujarat",
+      description:
+        "Professional earthmoving equipment rental in Morbi, Gujarat. High-quality Hanomag dozers, excavators, and heavy machinery since 1998. Get competitive quotes today!",
+      keywords:
+        "earthmoving equipment, heavy machinery rental, dozer rental, excavator rental, equipment rental Morbi, construction equipment, equipment hire Gujarat",
       ogTitle: "Patel Engineering & Earthmovers - Heavy Equipment Rental",
-      ogDescription: "Professional earthmoving equipment rental and heavy machinery services in Morbi, Gujarat",
-      canonicalUrl: "https://patelengineeringandearthmovers.in/"
+      ogDescription:
+        "Professional earthmoving equipment rental and heavy machinery services in Morbi, Gujarat",
+      canonicalUrl: "https://patelengineeringandearthmovers.in/",
     });
   }, []);
 
@@ -219,10 +222,7 @@ export function Home() {
             {logos.map((logo, index) => (
               <div key={index} className="logo-card">
                 <img
-                  src={getCloudinaryUrl(
-                    logo.id,
-                    "h_200,c_fit,q_auto:best,dpr_auto",
-                  )}
+                  src={getCloudinaryUrl(logo.id, "w_300,c_fit,f_auto,q_auto")}
                   alt={logo.name}
                   className="logo-img"
                   onError={(e) => {
