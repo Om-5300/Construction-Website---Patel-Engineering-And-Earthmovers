@@ -298,7 +298,7 @@ export function Home() {
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
                 <Link to={`/services/${service.slug}`} className="card-link">
-                  Learn More <ArrowRight size={16} />
+                  Learn More About {service.title} <ArrowRight size={16} />
                 </Link>
               </div>
             </div>
