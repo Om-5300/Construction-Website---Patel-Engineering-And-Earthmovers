@@ -337,9 +337,11 @@ export function RootLayout() {
         <img
           src={getCloudinaryUrl(
             "whatsapp_icon_snndwi_.png",
-            "w_400,f_auto,q_auto",
+            "w_56,h_56,c_fit,f_auto,q_auto",
           )}
           alt="WhatsApp"
+          loading="lazy"
+          decoding="async"
           style={{ width: "28px", height: "28px" }}
         />
       </a>
