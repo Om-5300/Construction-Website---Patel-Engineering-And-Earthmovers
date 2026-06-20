@@ -110,14 +110,14 @@ export function Home() {
             <source
               media="(max-width: 768px)"
               srcSet={getCloudinaryUrl(
-                "hero_mobile_wo0qgs.png",
+                "hero_mobile_wo0qgs.webp",
                 "w_768,h_1024,c_fill,g_auto,f_auto,q_auto",
               )}
             />
 
             <img
               src={getCloudinaryUrl(
-                "hero_image_itdpch.png",
+                "hero_image_itdpch.webp",
                 "w_1600,h_900,c_fill,g_auto,f_auto,q_auto",
               )}
               alt="Patel Engineering Heavy Fleet"
