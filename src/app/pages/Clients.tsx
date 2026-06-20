@@ -150,7 +150,7 @@ export function Clients() {
                 <div className="p-card-body">
                   <div className="p-logo-wrap">
                     <img
-                      src={getCloudinaryUrl(client.id, "h_300,c_fit,q_auto:best,dpr_auto")}
+                      src={getCloudinaryUrl(client.id, "w_300,c_fit,f_auto,q_auto")}
                       alt={client.name}
                       className="p-logo-img"
                       onError={(e) => {
