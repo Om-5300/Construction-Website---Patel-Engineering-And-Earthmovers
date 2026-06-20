@@ -12,7 +12,13 @@
   z-index: 10;
   padding: 5rem 1rem;
 }
-
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 1.5rem;
+  background: linear-gradient(to top, rgba(17, 24, 39, 0.8), transparent);
+}
 .premium-badge {
   display: inline-flex;
   align-items: center;
@@ -48,8 +54,12 @@
 }
 
 @media (min-width: 768px) {
-  .services-hero h1 { font-size: 4rem; }
-  .hero-inner { padding: 6rem 0; }
+  .services-hero h1 {
+    font-size: 4rem;
+  }
+  .hero-inner {
+    padding: 6rem 0;
+  }
 }
 
 .services-list {
@@ -178,10 +188,24 @@
 }
 
 @media (min-width: 1024px) {
-  .service-row { flex-direction: row; gap: 4rem; }
-  .service-row.reverse { flex-direction: row-reverse; }
-  .service-image-box { width: 50%; }
-  .service-info { width: 50%; }
-  .services-list { gap: 8rem; padding: 6rem 0; }
-  .specs-grid { grid-template-columns: 1fr 1fr; }
+  .service-row {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .service-row.reverse {
+    flex-direction: row-reverse;
+  }
+  .service-image-box {
+    width: 50%;
+  }
+  .service-info {
+    width: 50%;
+  }
+  .services-list {
+    gap: 8rem;
+    padding: 6rem 0;
+  }
+  .specs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
