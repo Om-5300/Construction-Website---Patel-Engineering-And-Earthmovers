@@ -88,7 +88,7 @@ const projects = [
     client: "SRFDCL",
     location: "Vithalapur, Ahmedabad",
     category: "Industry",
-    image: getCloudinaryUrl("honda_project_ubspjx_.webp", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("honda_project_ubspjx__.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   }
 ];
 
