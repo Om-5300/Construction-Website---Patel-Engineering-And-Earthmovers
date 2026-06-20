@@ -37,6 +37,7 @@ export function Home() {
   const featuredServices = [
     {
       title: "Dozer Services",
+      slug: "dozer-services",
       desc: "Specialized in Hanomag K7 Dozers for heavy earthmoving and grading.",
       image: getCloudinaryUrl(
         "Dozer_service_ee0zqk",
@@ -45,6 +46,7 @@ export function Home() {
     },
     {
       title: "Excavator Rental",
+      slug: "excavator-rental",
       desc: "High-performance excavators for precise digging and site preparation.",
       image: getCloudinaryUrl(
         "Excavator_service_pv5q2q",
@@ -53,6 +55,7 @@ export function Home() {
     },
     {
       title: "Roller Solutions",
+      slug: "roller-solutions",
       desc: "Vibratory rollers for optimal soil and asphalt compaction.",
       image: getCloudinaryUrl(
         "Roller_service_nq9wyh",
