@@ -113,7 +113,6 @@ export function Home() {
                 "hero_mobile_wo0qgs.png",
                 "w_768,h_1024,c_fill,g_auto,f_auto,q_auto",
               )}
-              
             />
 
             <img
@@ -177,8 +176,8 @@ export function Home() {
           <div className="who-image-box">
             <img
               src={getCloudinaryUrl(
-                "Hero_Dozer_vruwwu.png",
-                "w_1000,h_800,c_fill,g_auto",
+                "Hero_Dozer_vruwwu",
+                              "w_700,h_560,c_fill,g_auto,f_auto,q_auto",
               )}
               alt="Patel Engineering Fleet"
               className="who-image"
