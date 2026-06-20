@@ -10,7 +10,7 @@ const services = [
   {
     id: "dozer",
     name: "Hanomag K7 Dozer",
-    image: getCloudinaryUrl("Dozer_service_ee0zqk", "w_1200,h_900,c_fill,g_auto,q_auto:best"),
+    image: getCloudinaryUrl("Dozer_service_ee0zqk", "w_700,h_525,c_fill,g_auto,q_auto:best"),
     specs: ["Engine: 110 HP", "Blade Size: 10 Feet", "Weight: 8.5 Tons"],
     useCases: ["Land Clearing", "Bulk Grading", "Site Preparation", "Road Construction"],
     description: "Our Hanomag K7 dozers are the workhorses of our fleet. Known for their reliability and power, they are perfect for large-scale earthmoving tasks in Gujarat's diverse terrain."
@@ -18,7 +18,7 @@ const services = [
   {
     id: "excavator",
     name: "Heavy Duty Excavators",
-    image: getCloudinaryUrl("Excavator_service_pv5q2q", "w_1200,h_900,c_fill,g_auto,q_auto:best"),
+    image: getCloudinaryUrl("Excavator_service_pv5q2q", "w_700,h_525,c_fill,g_auto,q_auto:best"),
     specs: ["Capacity: 20-30 Tons", "Bucket Volume: 0.9 - 1.5 m³", "Max Digging Depth: 6.5m", "Hydraulic Power: 150 kW"],
     useCases: ["Trenching", "Foundation Digging", "Demolition", "Material Handling"],
     description: "Equipped with the latest hydraulic technology, our excavators deliver high precision and efficiency for all digging and loading requirements."
@@ -26,7 +26,7 @@ const services = [
   {
     id: "roller",
     name: "Vibratory Rollers",
-    image: getCloudinaryUrl("Roller_service_nq9wyh", "w_1200,h_900,c_fill,g_auto,q_auto:best"),
+    image: getCloudinaryUrl("Roller_service_nq9wyh", "w_700,h_525,c_fill,g_auto,q_auto:best"),
     specs: ["Operating Weight: 11 Tons", "Drum Width: 2.1m", "Frequency: 30-35 Hz", "Centrifugal Force: 250 kN"],
     useCases: ["Soil Compaction", "Asphalt Paving", "Sub-base Prep", "Road Maintenance"],
     description: "Ensure the stability of your structures with our high-impact vibratory rollers, designed for superior compaction on various soil types and surfaces."
