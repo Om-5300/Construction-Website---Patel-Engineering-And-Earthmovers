@@ -222,7 +222,7 @@ export function Home() {
             {logos.map((logo, index) => (
               <div key={index} className="logo-card">
                 <img
-                  src={getCloudinaryUrl(logo.id, "w_300,c_fit,f_auto,q_auto")}
+                  src={getCloudinaryUrl(logo.id, "w_250,h_100,c_fit,f_auto,q_auto")}
                   alt={logo.name}
                   className="logo-img"
                   onError={(e) => {
