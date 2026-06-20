@@ -177,7 +177,7 @@ export function Home() {
             <img
               src={getCloudinaryUrl(
                 "Hero_Dozer_vruwwu",
-                              "w_700,h_560,c_fill,g_auto,f_auto,q_auto",
+                "w_700,h_560,c_fill,g_auto,f_auto,q_auto",
               )}
               alt="Patel Engineering Fleet"
               className="who-image"
@@ -294,7 +294,7 @@ export function Home() {
               <div className="card-content">
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
-                <Link to="/services" className="card-link">
+                <Link to={`/services/${service.slug}`} className="card-link">
                   Learn More <ArrowRight size={16} />
                 </Link>
               </div>
