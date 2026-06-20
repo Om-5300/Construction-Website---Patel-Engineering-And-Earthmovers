@@ -113,12 +113,13 @@ export function Home() {
                 "hero_mobile_wo0qgs.png",
                 "w_768,h_1024,c_fill,g_auto,f_auto,q_auto",
               )}
+              
             />
 
             <img
               src={getCloudinaryUrl(
                 "hero_image_itdpch.png",
-                "w_1600,h_900,c_fill,g_auto,f_auto,q_auto",
+                "w_2500,h_900,c_fill,g_auto,f_auto,q_auto",
               )}
               alt="Patel Engineering Heavy Fleet"
               fetchPriority="high"
