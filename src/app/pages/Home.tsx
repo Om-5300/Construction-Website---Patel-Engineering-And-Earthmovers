@@ -66,7 +66,7 @@ export function Home() {
       name: "Diamond Bourse",
       location: "Surat, Gujarat",
       image: getCloudinaryUrl(
-        "Diamond_Bourse_hd3haq.jpg",
+        "Diamond_Bourse_hd3haq.webp",
         "w_900,h_900,c_fill,q_auto:best",
       ),
     },
@@ -74,7 +74,7 @@ export function Home() {
       name: "GIFT City",
       location: "Gandhinagar, Gujarat",
       image: getCloudinaryUrl(
-        "GIFT_CITY_obb8eb.jpg",
+        "GIFT_CITY_obb8eb.webp",
         "w_900,h_900,c_fill,q_auto:best",
       ),
     },
@@ -82,7 +82,7 @@ export function Home() {
       name: "Dholera Airport",
       location: "Dholera, Gujarat",
       image: getCloudinaryUrl(
-        "Dholera_Airport_ugx9vt.jpg",
+        "Dholera_Airport_ugx9vt.webp",
         "w_900,h_900,c_fill,q_auto:best",
       ),
     },

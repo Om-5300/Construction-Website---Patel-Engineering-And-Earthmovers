@@ -11,84 +11,84 @@ const projects = [
     client: "PSP Projects Ltd.",
     location: "Surat, Gujarat",
     category: "Commercial",
-    image: getCloudinaryUrl("Diamond_Bourse_hd3haq.jpg", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Diamond_Bourse_hd3haq.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "GIFT City",
     client: "GIFTCL",
     location: "Gandhinagar, Gujarat",
     category: "Commercial",
-    image: getCloudinaryUrl("GIFT_CITY_obb8eb.jpg", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("GIFT_CITY_obb8eb.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Mega Metro",
     client: "GMRC",
     location: "Ahmedabad, Gujarat",
     category: "Metro",
-    image: getCloudinaryUrl("Mega_Metro_Project_haynde.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Mega_Metro_Project_haynde.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Delhi–Mumbai Expressway",
     client: "NHAI / L&T",
     location: "Gujarat Stretch",
     category: "Expressway",
-    image: getCloudinaryUrl("Delhi_Mumbai_Expressway_Project_bqszds.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Delhi_Mumbai_Expressway_Project_bqszds.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Dholera International Airport",
     client: "AAI",
     location: "Dholera, Gujarat",
     category: "Airport",
-    image: getCloudinaryUrl("Dholera_Airport_ugx9vt.jpg", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Dholera_Airport_ugx9vt.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Hirasar(Rajkot) Airport",
     client: "AAI",
     location: "Hirasar, Rajkot, Gujarat",
     category: "Airport",
-    image: getCloudinaryUrl("Hirasar_Airport_Project_fnd07t.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Hirasar_Airport_Project_fnd07t.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Pipavav Port Expansion",
     client: "APM Terminals",
     location: "Amreli, Gujarat",
     category: "Port",
-    image: getCloudinaryUrl("Pipavav_Port_Project_gfvbac.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Pipavav_Port_Project_gfvbac.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
   {
     name: "Sabarmati Riverfront",
     client: "SRFDCL",
     location: "Ahmedabad, Gujarat",
     category: "Infrastructure",
-    image: getCloudinaryUrl("Sabarmati_Riverfront_Project_thicbg.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Sabarmati_Riverfront_Project_thicbg.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
 {
     name: "AM/NS Steel ",
     client: "SRFDCL",
     location: "Surat, Gujarat",
     category: "Industry",
-    image: getCloudinaryUrl("AMNS_Steel_Project_qwhihh.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("AMNS_Steel_Project_qwhihh.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
 {
     name: "Dholera-Ahmedabad Expressway ",
     client: "SRFDCL",
     location: "Gujarat Stretch",
     category: "Expressway",
-    image: getCloudinaryUrl("Dholera_Ahmedabad_Expressway_zmllby.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Dholera_Ahmedabad_Expressway_zmllby.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
 {
     name: "Maruti-Suzuki Limited",
     client: "SRFDCL",
     location: "Hansalpur",
     category: "Industry",
-    image: getCloudinaryUrl("Maruti_Suzuki_Project_v3qy1p.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("Maruti_Suzuki_Project_v3qy1p.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   },
 {
     name: "Honda Automobile Manufacturing Plant",
     client: "SRFDCL",
     location: "Vithalapur, Ahmedabad",
     category: "Industry",
-    image: getCloudinaryUrl("honda_project_swtq69_.png", "w_900,h_900,c_fill,f_auto,q_auto")
+    image: getCloudinaryUrl("honda_project_swtq69_.webp", "w_900,h_900,c_fill,f_auto,q_auto")
   }
 ];
 
