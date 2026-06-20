@@ -40,7 +40,7 @@ export function Home() {
       desc: "Specialized in Hanomag K7 Dozers for heavy earthmoving and grading.",
       image: getCloudinaryUrl(
         "Dozer_service_ee0zqk",
-        "w_700,h_525,c_fill,g_auto,q_auto:best",
+        "w_700,h_525,c_fill,g_auto,f_auto,q_auto:eco",
       ),
     },
     {
@@ -48,7 +48,7 @@ export function Home() {
       desc: "High-performance excavators for precise digging and site preparation.",
       image: getCloudinaryUrl(
         "Excavator_service_pv5q2q",
-        "w_700,h_525,c_fill,g_auto,q_auto:best",
+        "w_700,h_525,c_fill,g_auto,f_auto,q_auto:eco",
       ),
     },
     {
@@ -56,7 +56,7 @@ export function Home() {
       desc: "Vibratory rollers for optimal soil and asphalt compaction.",
       image: getCloudinaryUrl(
         "Roller_service_nq9wyh",
-        "w_700,h_525,c_fill,g_auto,q_auto:best",
+        "w_700,h_525,c_fill,g_auto,f_auto,q_auto:eco",
       ),
     },
   ];
