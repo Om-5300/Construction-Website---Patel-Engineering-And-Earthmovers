@@ -87,15 +87,15 @@ export function Home() {
 
   const logos = [
     { name: "L&T CONSTRUCTION", id: "lt_logo__.webp" },
-    { name: "PSP PROJECTS LTD", id: "psp_logo_.webp" },
+    { name: "PSP PROJECTS LTD", id: "psp_logo__.webp" },
     { name: "SHAPOORJI PALLONJI", id: "sp_logo.webp" },
     { name: "AFCON INFRASTRUCTURE", id: "afcon_logo_.webp" },
-    { name: "M.S. KHURANA ENG. LTD", id: "msk_logo_.webp" },
+    { name: "M.S. KHURANA ENG. LTD", id: "msk_logo__.webp" },
     { name: "URC CONSTRUCTION", id: "URC_logo_tj7lhc.webp" },
     { name: "DILIP BUILDCON LTD", id: "Dilip_Buildcon_Logo_mepbsb.webp" },
-    { name: "RANJIT BUILDCON LTD", id: "ranjeet_buildcon_logo.webp" },
-    { name: "BACKBONE ENTRERPRISE LTD", id: "backbone_logo_.webp" },
-    { name: "NCC LIMITED", id: "ncc_logo_.webp" },
+    { name: "RANJIT BUILDCON LTD", id: "ranjeet_buildcon_logo_.webp" },
+    { name: "BACKBONE ENTERPRISE LTD", id: "backbone_logo__.webp" },
+    { name: "NCC LIMITED", id: "ncc_logo__.webp" },
   ];
 
   return (

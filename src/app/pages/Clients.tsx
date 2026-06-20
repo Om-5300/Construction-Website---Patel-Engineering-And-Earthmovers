@@ -28,7 +28,7 @@ export function Clients() {
       name: "PSP PROJECTS LTD",
       id: "psp_logo__.webp",
       description: "Providing precision grading and site preparation for high-rise commercial developments."
-    },
+    },  
     {
       name: "SHAPOORJI PALLONJI",
       id: "sp_logo.webp",
@@ -60,13 +60,13 @@ export function Clients() {
       description: "Expert earthmoving services for metro rail and urban transport infrastructure."
     },
     {
-      name: "BACKBONE ENTRERPRISE LTD",
-      id: "backbone_logo_.webp",
+      name: "BACKBONE ENTERPRISE LTD",
+      id: "backbone_logo__.webp",
       description: "Infrastructure support for regional canal systems and water management."
     },
     {
       name: "NCC LIMITED",
-      id: "ncc_logo_.webp",
+      id: "ncc_logo__.webp",
       description: "Providing heavy machinery for integrated township and mining site preparation."
     }
   ];
