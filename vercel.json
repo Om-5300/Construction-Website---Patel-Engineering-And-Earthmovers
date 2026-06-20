@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/gallery.html",
+      "destination": "/gallery",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
