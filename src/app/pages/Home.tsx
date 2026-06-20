@@ -111,15 +111,19 @@ export function Home() {
               media="(max-width: 768px)"
               srcSet={getCloudinaryUrl(
                 "hero_mobile_wo0qgs.png",
-                "w_768,h_1024,c_fill,g_auto,q_auto:best",
+                "w_768,h_1024,c_fill,g_auto,f_auto,q_auto",
               )}
             />
+
             <img
               src={getCloudinaryUrl(
                 "hero_image_itdpch.png",
-                "w_2500,f_auto,c_fill,q_auto:best",
+                "w_1600,h_900,c_fill,g_auto,f_auto,q_auto",
               )}
               alt="Patel Engineering Heavy Fleet"
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
             />
           </picture>
           <div className="hero-overlay"></div>
@@ -222,7 +226,10 @@ export function Home() {
             {logos.map((logo, index) => (
               <div key={index} className="logo-card">
                 <img
-                  src={getCloudinaryUrl(logo.id, "w_250,h_100,c_fit,f_auto,q_auto")}
+                  src={getCloudinaryUrl(
+                    logo.id,
+                    "w_250,h_100,c_fit,f_auto,q_auto",
+                  )}
                   alt={logo.name}
                   className="logo-img"
                   onError={(e) => {
